@@ -1,0 +1,479 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #000;
+    /* Mengubah warna background menjadi putih */
+    color: #ffff;
+    /* Mengubah warna teks menjadi hitam */
+}
+
+.sidebarOption {
+    display: flex;
+    align-items: center;
+}
+
+.sidebarOption .material-icons,
+.sidebarOption .fa-x-twitter {
+    padding: 11px;
+    margin-right: 4px;
+}
+
+.sidebarOption h2 {
+    font-weight: 800;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.sidebarOption:hover {
+    background-color: rgba(185, 190, 196, 0.166);
+    border-radius: 30px;
+    color: white;
+    transition: color 100ms ease-out;
+}
+
+.sidebarOption.active {
+    color: #50b7f5;
+}
+
+.sidebar_tweet {
+    width: 180px;
+    background-color: #50b7f5;
+    border: none;
+    color: #ffff;
+    font-weight: 900;
+    border-radius: 30px;
+    height: 50px;
+    margin-top: 20px;
+}
+
+.sidebar_tweet:hover {
+    background-color: #1e90ff;
+    cursor: pointer;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 10px;
+}
+
+.sidebar {
+    flex: 0.2;
+    min-width: 250px;
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+.fa-x-twitter {
+    color: white;
+    font-size: 30px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.px-2 {
+    padding: 10px;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.py-2 {
+    padding-bottom: 1rem;
+}
+
+
+.border-bottom {
+    border-bottom: 1px solid #e1e8ed2e;
+    /* Ubah sesuai kebutuhan warna dan ketebalan */
+}
+
+
+
+/* tengah */
+
+.feeds {
+    border-left: 1px solid #e1e8ed2e;
+    /* Mengubah warna dan ketebalan border kiri */
+    border-right: 1px solid #e1e8ed2e;
+    /* Mengubah warna dan ketebalan border kanan */
+    padding: 0;
+    border-top: 10px;
+    box-sizing: border-box;
+    width: 600px;
+}
+
+.feed-items {
+    padding: 12px 16px;
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+    width: 279px;
+    justify-content: center;
+    flex-direction: column;
+    height: 52px;
+}
+
+.button {
+    /* Sesuaikan dengan kebutuhan */
+    font-size: 15pt;
+    background-color: #0000;
+    /* Warna latar belakang tombol */
+    color: #fff;
+    /* Warna teks tombol */
+    border: none;
+    border-radius: 5px;
+    /* Ubah menjadi nilai positif */
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: rgba(185, 190, 196, 0.166);
+    /* Warna latar belakang tombol saat dihover */
+    transition: color 100ms ease-out;
+}
+
+.icon-right {
+    font-size: 23px;
+    cursor: pointer;
+    color: #50b7f5;
+}
+
+
+/* posting */
+.posting {
+    background-color: #000;
+    /* Mengubah latar belakang menjadi warna putih */
+    align-items: center;
+    padding: 16px 18px;
+}
+
+.image {
+    /* display: flex; */
+    align-items: center;
+    z-index: inherit;
+}
+
+.twitter-textbox {
+    background-color: #000;
+    /* Warna latar belakang sesuai dengan warna asli Twitter */
+    color: white;
+    /* Warna teks */
+    border-radius: 0px;
+    /* Membuat sudut border lebih bulat */
+    padding: 10px 10px;
+    /* Padding di sekitar teks */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    /* Ukuran teks */
+    outline: none;
+    /* Menghilangkan outline saat aktif */
+    width: 100%;
+    /* Lebar sesuai dengan parent container */
+    border: 1px solid transparent;
+    /* Menghilangkan border */
+}
+
+.twitter-textbox::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+    /* Warna placeholder */
+}
+
+.twitter-textbox:focus {
+    border: 1px solid #000;
+    /* Warna border saat aktif */
+}
+
+.twitter-button {
+    background-color: #1da1f2;
+    color: #fff;
+    border: none;
+    border-radius: 9999px;
+    /* membuat tombol menjadi lingkaran */
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.twitter-button:hover {
+    background-color: #0f89d1;
+}
+
+.name {
+    margin-right: 7px;
+}
+
+.icon span {
+    margin-top: 5px;
+    /* Jarak antara ikon dan teks */
+    font-size: 14px;
+    color: #697787;
+    /* Warna teks */
+    cursor: pointer;
+}
+
+.icon:hover span {
+    color: #50b7f5;
+    /* Warna teks saat dihover */
+}
+
+.search {
+    position: relative;
+    width: 80%;
+    height: 45.5px;
+}
+
+.search i {
+    position: absolute;
+    color: grey;
+    bottom: 10px;
+    left: 14px;
+    font-size: 2.5rem;
+}
+
+.search input {
+    padding-left: 55px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(128, 128, 128, 0.257);
+    border-radius: 9999px;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 1.6rem;
+}
+
+.search input::placeholder {
+    color: grey;
+    font-size: 1.6rem;
+    letter-spacing: 0.2px;
+    font-weight: 500;
+}
+
+.search input:focus {
+    border: 2px solid rgb(29, 155, 240);
+    background-color: black;
+}
+
+.caption {
+    margin: 6px 0px;
+}
+
+.content .content-body {
+    margin-left: 10px;
+    margin-right: 40px;
+}
+
+.right-bar {
+    flex-grow: 1;
+    padding: 20px;
+    margin-left: 20px;
+}
+
+.search-bar {
+    background-color: #202327;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    padding: 7px 20px;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.search-bar input {
+    color: white;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    font-size: 15px;
+    padding: 5px;
+}
+
+.right-bar-card {
+    background-color: #16181c;
+    padding: 20px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    margin-top: 20px;
+}
+
+.right-bar-card-title {
+    margin-bottom: 10px;
+}
+
+.langganan-body {
+    margin-bottom: 10px;
+}
+
+.langganan-btn {
+    background-color: #1a8cd8;
+    outline: none;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.trending,
+.friend-suggestion {
+    padding: 0;
+}
+
+.trending-title,
+.friend-suggestion-title {
+    padding: 20px;
+    padding-bottom: 5px;
+}
+
+.trending-card {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+    padding: 10px 20px;
+}
+
+.trending-card:hover,
+.friend-suggestion-body:hover {
+    background-color: #1d1f23;
+}
+
+.trending-category {
+    display: flex;
+    justify-content: space-between;
+    color: #54585d;
+    font-size: 13px;
+    align-items: end;
+}
+
+.trending-topic {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.trending-topic-post-count {
+    font-size: 13px;
+    color: #54585d;
+}
+
+.trending-footer,
+.friend-footer {
+    padding: 20px;
+    color: #1d9bf0;
+    text-decoration: none;
+    display: block;
+    border-radius: 0 0 20px 20px;
+    -webkit-border-radius: 0 0 20px 20px;
+    -moz-border-radius: 0 0 20px 20px;
+    -ms-border-radius: 0 0 20px 20px;
+    -o-border-radius: 0 0 20px 20px;
+}
+
+.trending-footer:hover,
+.friend-footer:hover {
+    background-color: #1d1f23;
+}
+
+.friend-suggestion {
+    display: flex;
+    flex-direction: column;
+}
+
+.friend-suggestion-body {
+    display: flex;
+    padding: 15px 20px;
+    align-items: center;
+}
+
+.friend-suggestion-body .friend-pict {
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.friend-suggestion-body .friend-detail {
+    margin-left: 5px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.friend-suggestion-body .friend-name {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.friend-suggestion-body .friend-username {
+    font-size: 14px;
+    color: grey;
+}
+
+.friend-suggestion-body .friend-follow-btn {
+    justify-self: flex-end;
+    outline: none;
+    border: none;
+    background-color: white;
+    color: black;
+    width: 64px;
+    height: 32px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.friend-suggestion-body .friend-follow-btn:hover {
+    background-color: #d7dbdc;
+}
+
+.right-bar footer {
+    margin-top: 20px;
+    font-size: 13px;
+    padding: 0 18px;
+    line-height: 1.2rem;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+}
+
+.right-bar footer a {
+    color: #71767B;
+    text-decoration: none;
+}
